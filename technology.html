@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Технологии Московской области</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<!-- ШАПКА -->
+
+<header>
+
+    <div class="logo">
+        НАУКА МОСКОВСКОЙ ОБЛАСТИ
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Главная
+        </a>
+
+        <a href="scientists.html">
+            Учёные
+        </a>
+
+        <a href="industry.html">
+            Промышленность
+        </a>
+
+        <a href="technology.html">
+            Технологии
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ГЛАВНЫЙ ЭКРАН -->
+
+<main class="technology-page">
+
+    <section class="technology-hero">
+
+        <div class="technology-hero-text">
+
+            <p class="small-title">
+                ТЕХНОЛОГИИ РЕГИОНА
+            </p>
+
+            <h1>
+                Будущее
+                <br>
+                создаётся
+                <br>
+                здесь
+            </h1>
+
+            <p>
+                Современные технологии меняют производство,
+                медицину, транспорт и городскую среду
+                Московской области.
+            </p>
+
+            <a href="#technology-map" class="technology-scroll-button">
+                Исследовать технологии ↓
+            </a>
+
+        </div>
+
+
+        <!-- АБСТРАКТНАЯ СХЕМА -->
+
+        <div class="technology-visual">
+
+            <div class="tech-orbit orbit-one"></div>
+
+            <div class="tech-orbit orbit-two"></div>
+
+            <div class="tech-orbit orbit-three"></div>
+
+            <div class="tech-core">
+            </div>
+
+            <div class="tech-point point-one">
+                🤖
+            </div>
+
+            <div class="tech-point point-two">
+                🛰️
+            </div>
+
+            <div class="tech-point point-three">
+                🧬
+            </div>
+
+            <div class="tech-point point-four">
+                🧠
+            </div>
+
+            <div class="tech-point point-five">
+                🏥
+            </div>
+             <div class="tech-point point-six">
+                🌱
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ВВОДНЫЙ БЛОК -->
+
+    <section class="technology-introduction">
+
+        <div>
+
+            <p class="small-title">
+                О ТЕХНОЛОГИЯХ
+            </p>
+
+            <h2>
+                От науки
+                <br>
+                к реальным решениям
+            </h2>
+
+        </div>
+
+        <p>
+
+            Научные разработки становятся технологиями,
+            которые используются в повседневной жизни.
+            Они помогают автоматизировать процессы,
+            обрабатывать информацию, создавать новые
+            материалы и развивать медицину.
+
+        </p>
+
+    </section>
+
+
+    <!-- КАРТА ТЕХНОЛОГИЙ -->
+
+    <section
+        class="technology-map"
+        id="technology-map"
+    >
+
+        <div class="technology-map-heading">
+
+            <p class="small-title">
+                НАПРАВЛЕНИЯ
+            </p>
+
+            <h2>
+                Технологическая карта
+            </h2>
+
+            <p>
+                Выберите направление и узнайте,
+                как оно применяется.
+            </p>
+
+        </div>
+
+
+        <div class="technology-map-container">
+
+
+            <!-- ЦЕНТР -->
+
+            <div class="technology-map-center">
+
+                <span>
+                    ✦
+                </span>
+
+                <strong>
+                    ТЕХНОЛОГИИ
+                </strong>
+
+                <small>
+                    МОСКОВСКОЙ ОБЛАСТИ
+                </small>
+
+            </div>
+
+
+            <!-- РОБОТЫ -->
+
+            <button
+                class="tech-map-item tech-item-one"
+                onclick="showTechnology(
+
+                    'Робототехника',
+
+                    '🤖',
+
+                    'Роботы помогают выполнять точные, повторяющиеся и сложные операции. Они используются в промышленности, логистике и других сферах.',
+
+                    'АВТОМАТИЗАЦИЯ',
+
+                    'Процессы выполняются быстрее и с высокой точностью.'
+
+                )"
+            >
+
+                <span>🤖</span>
+
+                <strong>
+                    Роботы
+                </strong>
+
+                <small>
+                    автоматизация
+                </small>
+
+            </button>
+
+
+            <!-- КОСМОС -->
+
+            <button
+                class="tech-map-item tech-item-two"
+                onclick="showTechnology(
+
+                    'Космические технологии',
+
+                    '🛰️',
+
+                    'Космические технологии позволяют наблюдать за Землёй, получать данные о поверхности планеты и развивать связь и навигацию.',
+
+                    'НАБЛЮДЕНИЕ',
+
+                    'Спутники помогают получать информацию о нашей планете.'
+
+                )"
+            >
+
+                <span>🛰️</span>
+
+                <strong>
+                    Космос
+                </strong>
+
+                <small>
+                    спутники
+                </small>
+
+            </button>
+
+
+            <!-- БИОТЕХНОЛОГИИ -->
+
+            <button
+                class="tech-map-item tech-item-three"
+                onclick="showTechnology(
+
+                    'Биотехнологии',
+
+                    '🧬',
+
+                    'Биотехнологии используют свойства живых организмов и клеток для создания полезных продуктов и развития медицины.',
+
+                    'БИОЛОГИЯ',
+
+                    'Биологические процессы используются для решения практических задач.'
+
+                )"
+            >
+
+                <span>🧬</span>
+
+                <strong>
+                    Биотехнологии
+                </strong>
+
+                <small>
+                    клетки и организмы
+                </small>
+
+            </button>
+
+
+            <!-- ИИ -->
+
+            <button
+                class="tech-map-item tech-item-four"
+                onclick="showTechnology(
+
+                    'Искусственный интеллект',
+
+                    '🧠',
+
+                    'Искусственный интеллект позволяет компьютерам анализировать большие объёмы информации, находить закономерности и помогать человеку принимать решения.',
+
+                    'АНАЛИЗ ДАННЫХ',
+
+                    'Компьютер обрабатывает информацию и находит закономерности.'
+
+                )"
+            >
+
+                <span>🧠</span>
+
+                <strong>
+                    Искусственный интеллект
+                </strong>
+
+                <small>
+                    анализ данных
+                </small>
+
+            </button>
+
+
+            <!-- МЕДИЦИНА -->
+
+            <button
+                class="tech-map-item tech-item-five"
+                onclick="showTechnology(
+
+                    'Медицинские технологии',
+
+                    '🏥',
+
+                    'Современные технологии помогают врачам проводить диагностику, исследовать заболевания и создавать новое медицинское оборудование.',
+
+                    'МЕДИЦИНА',
+
+                    'Технологии помогают быстрее получать информацию о состоянии организма.'
+
+                )"
+            >
+
+                <span>🏥</span>
+
+                <strong>
+                    Медицина
+                </strong>
+
+                <small>
+                    диагностика
+                </small>
+
+            </button>
+
+
+            <!-- ЭКОЛОГИЯ -->
+
+            <button
+                class="tech-map-item tech-item-six"
+                onclick="showTechnology(
+
+                    'Экологические технологии',
+
+                    '🌱',
+
+                    'Экологические технологии помогают уменьшать воздействие человека на окружающую среду, перерабатывать отходы и контролировать состояние природы.',
+
+                    'ЭКОЛОГИЯ',
+
+                    'Технологии помогают рационально использовать ресурсы и снижать количество отходов.'
+
+                )"
+            >
+
+                <span>🌱</span>
+
+                <strong>
+                    Экология
+                </strong>
+
+                <small>
+                    окружающая среда
+                </small>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- КАК ЭТО РАБОТАЕТ -->
+
+    <section class="how-technology-works">
+
+        <div class="how-title">
+
+            <p class="small-title">
+                ПРИНЦИП
+            </p>
+
+            <h2>
+                Как технология
+                превращает данные в результат
+            </h2>
+
+        </div>
+
+
+        <div class="technology-process">
+
+            <div class="process-step">
+
+                <div class="process-number">
+                    01
+                </div>
+
+                <div class="process-icon">
+                    📥
+                </div>
+
+                <h3>
+                    Получение
+                </h3>
+
+                <p>
+                    Система получает данные
+                    или информацию.
+                </p>
+
+            </div>
+
+
+            <div class="process-line">
+                →
+            </div>
+
+
+            <div class="process-step">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <div class="process-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Обработка
+                </h3>
+
+                <p>
+                    Технология анализирует
+                    и обрабатывает информацию.
+                </p>
+
+            </div>
+
+
+            <div class="process-line">
+                →
+            </div>
+
+
+            <div class="process-step">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <div class="process-icon">
+                    💡
+                </div>
+
+                <h3>
+                    Результат
+                </h3>
+
+                <p>
+                    Получается решение,
+                    которое можно использовать.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<!-- ВСПЛЫВАЮЩАЯ ИНФОРМАЦИЯ -->
+
+<div
+    class="technology-info-modal"
+    id="technologyInfoModal"
+>
+
+    <div class="technology-info-content">
+
+        <button
+            class="technology-info-close"
+            onclick="closeTechnology()"
+        >
+            ×
+        </button>
+
+
+        <div class="technology-info-icon" id="infoIcon">
+            🤖
+        </div>
+
+
+        <p class="small-title">
+            ТЕХНОЛОГИЧЕСКОЕ НАПРАВЛЕНИЕ
+        </p>
+
+
+        <h2 id="infoTitle">
+            Робототехника
+        </h2>
+
+
+        <p
+            class="technology-info-description"
+            id="infoDescription"
+        >
+        </p>
+
+
+        <div class="technology-result">
+
+            <div class="result-label">
+                НАПРАВЛЕНИЕ
+            </div>
+
+            <strong id="infoDirection">
+            </strong>
+
+        </div>
+
+
+        <div class="technology-result">
+
+            <div class="result-label">
+                РЕЗУЛЬТАТ
+            </div>
+
+            <strong id="infoResult">
+            </strong>
+
+        </div>
+
+
+    </div>
+
+</div>
+<!-- JAVASCRIPT -->
+<script>
+
+    function showTechnology(
+        title,
+        icon,
+        description,
+        direction,
+        result
+    ) {
+
+        document.getElementById(
+            "infoTitle"
+        ).textContent = title;
+
+
+        document.getElementById(
+            "infoIcon"
+        ).textContent = icon;
+
+
+        document.getElementById(
+            "infoDescription"
+        ).textContent = description;
+
+
+        document.getElementById(
+            "infoDirection"
+        ).textContent = direction;
+
+
+        document.getElementById(
+            "infoResult"
+        ).textContent = result;
+
+
+        document.getElementById(
+            "technologyInfoModal"
+        ).classList.add("active");
+
+    }
+
+
+    function closeTechnology() {
+
+        document.getElementById(
+            "technologyInfoModal"
+        ).classList.remove("active");
+
+    }
+
+
+    document.getElementById(
+        "technologyInfoModal"
+    ).addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target === this
+            ) {
+
+                closeTechnology();
+
+            }
+
+        }
+    );
+
+
+</script>
+<!-- ПОДВАЛ -->
+
+<footer>
+
+    <p>
+        © 2026 Наука и технологии моего края
+    </p>
+
+    <a href="index.html">
+        ← Вернуться на главную
+    </a>
+
+</footer>
+
+</body>
+
+</html>

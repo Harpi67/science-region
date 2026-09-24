@@ -1,0 +1,1878 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8fa;
+    color: #4a3840;
+    line-height: 1.6;
+}
+
+
+/* ШАПКА */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #f3dce3;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b76e86;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #5b454d;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #c78399;
+}
+
+
+/* ПЕРВЫЙ ЭКРАН */
+
+.hero {
+    min-height: 650px;
+    padding: 100px 8%;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #fdecef,
+        #fff8fa,
+        #f9edf2
+    );
+}
+
+.hero-text {
+    max-width: 750px;
+}
+
+.small-title,
+.section-label {
+    color: #c78399;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #49363e;
+}
+
+.hero h1 span {
+    color: #b76e86;
+}
+
+.description {
+    max-width: 600px;
+    font-size: 20px;
+    color: #806873;
+    margin-bottom: 35px;
+}
+
+
+/* КНОПКА */
+
+.button {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background-color: #c78399;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #b76e86;
+    transform: translateY(-2px);
+}
+
+
+/* ОБЩИЕ СЕКЦИИ */
+
+.about,
+.discover,
+.timeline {
+    padding: 100px 8%;
+}
+
+.about {
+    background-color: #fff;
+}
+
+.about h2,
+.discover h2,
+.timeline h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #49363e;
+}
+
+.about > p:last-child {
+    max-width: 750px;
+    color: #806873;
+    font-size: 18px;
+}
+
+
+/* КАРТОЧКИ */
+
+.discover {
+    background-color: #fff8fa;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #fff;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    border: 1px solid #f1d9e1;
+
+    box-shadow: 0 8px 25px rgba(183, 110, 134, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(183, 110, 134, 0.15);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #5a414b;
+}
+
+.card p {
+    color: #806873;
+}
+
+
+/* ХРОНОЛОГИЯ */
+
+.timeline {
+    background-color: #fff;
+}
+
+.timeline-line {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+.year {
+    padding: 25px;
+
+    border-left: 4px solid #d99caf;
+
+    background-color: #fff8fa;
+
+    border-radius: 0 12px 12px 0;
+}
+
+.year strong {
+    font-size: 28px;
+    color: #b76e86;
+}
+
+.year p {
+    margin-top: 10px;
+    color: #806873;
+}
+
+
+/* ПОДВАЛ */
+
+footer {
+    padding: 50px 8%;
+
+    background-color: #4a3840;
+    color: #f7e8ed;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ТЕЛЕФОН */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-line {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}/* КНОПКА НА КАРТОЧКЕ */
+
+.card-button {
+    display: inline-block;
+    margin-top: 20px;
+
+    padding: 10px 18px;
+
+    background-color: #c78399;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card-button:hover {
+    background-color: #b76e86;
+}
+
+
+/* СТРАНИЦА УЧЁНЫХ */
+
+.scientists-page {
+    padding: 90px 8%;
+    background-color: #fff8fa;
+    min-height: 80vh;
+}
+
+.scientists-page h1 {
+    font-size: 52px;
+    color: #49363e;
+    margin-bottom: 20px;
+}
+
+.page-description {
+    max-width: 650px;
+    color: #806873;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+
+/* СЕТКА УЧЁНЫХ */
+
+.scientists-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+
+/* КАРТОЧКА УЧЁНОГО */
+
+.scientist-card {
+    background-color: white;
+
+    padding: 18px;
+
+    border-radius: 20px;
+
+    border: 1px solid #f1d9e1;
+
+    box-shadow: 0 8px 25px rgba(183, 110, 134, 0.08);
+}
+
+.scientist-card h3 {
+    margin-top: 18px;
+    font-size: 24px;
+    color: #5a414b;
+}
+
+.scientist-card > p {
+    color: #c78399;
+}
+
+
+/* ФОТО */
+
+.scientist-photo {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 3 / 4;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.scientist-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+/* ИНФОРМАЦИЯ, КОТОРАЯ ПОЯВЛЯЕТСЯ ПРИ НАВЕДЕНИИ */
+
+.scientist-info {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 30px;
+
+    background: rgba(74, 56, 64, 0.92);
+
+    color: white;
+
+    transform: translateY(100%);
+
+    transition: 0.4s;
+}
+
+.scientist-info h2 {
+    margin-bottom: 10px;
+}
+
+.scientist-info p {
+    color: #f8e9ee;
+}
+
+
+/* МЫШКУ НА ФОТО */
+
+.scientist-photo:hover img {
+    transform: scale(1.05);
+}
+
+.scientist-photo:hover .scientist-info {
+    transform: translateY(0);
+}
+
+
+/* ССЫЛКА В ПОДВАЛЕ */
+
+footer a {
+    color: #f7dce5;
+    text-decoration: none;
+}
+
+
+/* ТЕЛЕФОН */
+
+@media (max-width: 800px) {
+
+    .scientists-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scientists-page h1 {
+        font-size: 40px;
+    }
+
+    .scientist-photo {
+        height: 350px;
+    }
+}/* =========================================
+   ПРОМЫШЛЕННОСТЬ МОСКОВСКОЙ ОБЛАСТИ
+   ========================================= */
+
+.industry-page {
+    padding: 90px 8%;
+    background: #fff8fa;
+    min-height: 80vh;
+}
+
+
+/* ВСТУПЛЕНИЕ */
+
+.industry-intro {
+    max-width: 850px;
+    margin-bottom: 60px;
+}
+
+.small-title {
+    color: #c78399;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.industry-intro h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    color: #49363e;
+    margin-bottom: 25px;
+}
+
+.industry-lead {
+    max-width: 700px;
+    color: #806873;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* ФАКТЫ */
+
+.industry-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.industry-fact {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+
+    padding: 25px;
+
+    background: white;
+    border: 1px solid #f1d9e1;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(183, 110, 134, 0.07);
+}
+
+.industry-fact > span {
+    font-size: 32px;
+}
+
+.industry-fact strong {
+    color: #5a414b;
+    font-size: 18px;
+}
+
+.industry-fact p {
+    margin-top: 8px;
+    color: #806873;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+/* ЗАГОЛОВОК РАЗДЕЛА */
+
+.industry-section {
+    margin-bottom: 80px;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #49363e;
+    margin-bottom: 10px;
+}
+
+.section-heading > p:last-child {
+    color: #806873;
+    font-size: 17px;
+}
+
+
+/* КАРТОЧКИ ОТРАСЛЕЙ */
+
+.industry-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.industry-category {
+    display: flex;
+    gap: 22px;
+
+    padding: 28px;
+
+    background: white;
+    border: 1px solid #f1d9e1;
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 25px rgba(183, 110, 134, 0.06);
+}
+
+.industry-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(183, 110, 134, 0.13);
+    border-color: #e6b9c7;
+}
+
+
+/* ИКОНКА */
+
+.category-icon {
+    min-width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fdecef;
+    border-radius: 17px;
+
+    font-size: 31px;
+}
+
+
+/* ТЕКСТ */
+
+.category-content h3 {
+    color: #5a414b;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.category-content > p {
+    color: #806873;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+/* ДОПОЛНИТЕЛЬНЫЙ ТЕКСТ */
+
+.category-more {
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    margin-top: 0;
+
+    color: #806873;
+    font-size: 14px;
+    line-height: 1.5;
+
+    transition: 0.4s;
+}
+
+.industry-category:hover .category-more {
+    max-height: 120px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+
+/* ЗАКЛЮЧЕНИЕ */
+
+.industry-conclusion {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    padding: 40px;
+
+    background: #fdecef;
+    border-radius: 25px;
+
+    margin-top: 40px;
+}
+
+.conclusion-icon {
+    font-size: 55px;
+}
+
+.industry-conclusion h2 {
+    color: #49363e;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.industry-conclusion p:last-child {
+    color: #806873;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+
+/* ТЕЛЕФОН */
+
+@media (max-width: 800px) {
+
+    .industry-page {
+        padding: 60px 6%;
+    }
+
+    .industry-intro h1 {
+        font-size: 42px;
+    }
+
+    .industry-lead {
+        font-size: 17px;
+    }
+
+    .industry-facts {
+        grid-template-columns: 1fr;
+        margin-bottom: 70px;
+    }
+
+    .industry-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 31px;
+    }
+
+    .industry-conclusion {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .industry-conclusion h2 {
+        font-size: 26px;
+    }
+}/* =========================================
+   КЛИКАБЕЛЬНЫЕ ОТРАСЛИ
+   ========================================= */
+
+.industry-clickable {
+    cursor: pointer;
+}
+
+.click-hint {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #c78399;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   ВСПЛЫВАЮЩЕЕ ОКНО
+   ========================================= */
+
+.industry-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(74, 56, 64, 0.65);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 1000;
+
+}
+
+
+.industry-modal.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+
+/* САМО ОКНО */
+
+.industry-modal-content {
+
+    position: relative;
+
+    width: min(900px, 100%);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(74, 56, 64, 0.3);
+
+    transform: translateY(30px);
+
+    transition: 0.3s;
+
+}
+
+
+.industry-modal.active
+.industry-modal-content {
+
+    transform: translateY(0);
+
+}
+
+
+
+/* ФОТО */
+
+.industry-modal-content img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 450px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* ТЕКСТ */
+
+.modal-text {
+
+    padding: 50px 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.modal-text h2 {
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    color: #49363e;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* ПРЕДПРИЯТИЕ И АДРЕС */
+
+.modal-place {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+
+    padding: 15px;
+
+    background: #fff8fa;
+
+    border-radius: 14px;
+
+}
+
+
+.modal-place > span {
+
+    font-size: 24px;
+
+}
+
+
+.modal-place strong {
+
+    display: block;
+
+    color: #5a414b;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.modal-place p {
+
+    color: #806873;
+
+    line-height: 1.4;
+
+    margin: 0;
+
+}
+
+
+
+/* ОПИСАНИЕ */
+
+.modal-description {
+
+    margin-top: 5px;
+
+}
+
+
+.modal-description strong {
+
+    display: block;
+
+    color: #5a414b;
+
+    margin-bottom: 8px;
+
+}
+
+
+.modal-description p {
+
+    color: #806873;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+}
+
+
+
+/* КРЕСТИК */
+
+.modal-close {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #5a414b;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: 0.2s;
+
+}
+
+
+.modal-close:hover {
+
+    background: #fdecef;
+
+    transform: rotate(90deg);
+
+}
+
+
+
+/* =========================================
+   ТЕЛЕФОН
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .industry-modal {
+
+        padding: 15px;
+
+    }
+
+
+    .industry-modal-content {
+
+        grid-template-columns: 1fr;
+
+        max-height: 92vh;
+
+        overflow-y: auto;
+
+    }
+
+
+    .industry-modal-content img {
+
+        height: 230px;
+
+        min-height: 230px;
+
+    }
+
+
+    .modal-text {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .modal-text h2 {
+
+        font-size: 28px;
+
+    }
+}
+/* =========================================
+НОВАЯ СТРАНИЦА ТЕХНОЛОГИЙ
+========================================= */
+
+.technology-page {
+overflow: hidden;
+}
+
+/* =========================================
+ГЛАВНЫЙ ЭКРАН
+========================================= */
+
+.technology-hero {
+min-height: 720px;
+padding: 80px 8%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+background:
+radial-gradient(
+circle at 75% 50%,
+#fdecef 0,
+#fff8fa 42%,
+#fff8fa 100%
+);
+}
+
+.technology-hero-text {
+width: 48%;
+max-width: 600px;
+}
+
+.technology-hero-text h1 {
+margin: 20px 0;
+font-size: clamp(50px, 7vw, 90px);
+line-height: 0.98;
+letter-spacing: -3px;
+color: #49363e;
+}
+
+.technology-hero-text > p:not(.small-title) {
+max-width: 500px;
+color: #806873;
+font-size: 18px;
+line-height: 1.7;
+}
+
+.technology-scroll-button {
+display: inline-block;
+margin-top: 30px;
+padding: 14px 22px;
+background: #c78399;
+color: white;
+text-decoration: none;
+border-radius: 10px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.technology-scroll-button:hover {
+background: #b76e86;
+transform: translateY(-2px);
+}
+
+/* =========================================
+КРУГОВАЯ СХЕМА
+========================================= */
+
+.technology-visual {
+position: relative;
+width: 520px;
+height: 520px;
+flex-shrink: 0;
+}
+
+.tech-orbit {
+position: absolute;
+border: 1px solid #efcfd9;
+border-radius: 50%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+.orbit-one {
+width: 220px;
+height: 220px;
+}
+
+.orbit-two {
+width: 350px;
+height: 350px;
+}
+
+.orbit-three {
+width: 480px;
+height: 480px;
+} 
+
+.tech-core {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 145px;
+height: 145px;
+border-radius: 50%;
+background: #c78399;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-shadow:
+0 0 0 15px rgba(199, 131, 153, 0.08),
+0 20px 50px rgba(183, 110, 134, 0.25);
+z-index: 3;
+}
+
+.tech-core span {
+font-size: 35px;
+}
+
+.tech-core strong {
+margin-top: 5px;
+font-size: 15px;
+letter-spacing: 2px;
+}
+
+.tech-point {
+position: absolute;
+width: 65px;
+height: 65px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: white;
+border: 1px solid #f0d6de;
+border-radius: 50%;
+font-size: 27px;
+box-shadow: 0 8px 25px rgba(74, 56, 64, 0.1);
+z-index: 4;
+}
+
+.point-one {
+top: 30px;
+left: 220px;
+}
+
+.point-two {
+top: 130px;
+right: 25px;
+}
+
+.point-three {
+bottom: 60px;
+right: 55px;
+}
+
+.point-four {
+bottom: 55px;
+left: 60px;
+}
+
+.point-five {
+top: 130px;
+left: 20px;
+}
+
+.point-six {
+top: 400px;
+left: 220px;
+}
+/* =========================================
+ВВОДНЫЙ БЛОК
+========================================= */
+
+.technology-introduction {
+max-width: 1100px;
+margin: 0 auto;
+padding: 100px 30px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 80px;
+align-items: center;
+}
+
+.technology-introduction h2 {
+margin-top: 12px;
+font-size: 44px;
+line-height: 1.1;
+color: #49363e;
+}
+
+.technology-introduction > p {
+color: #806873;
+line-height: 1.8;
+font-size: 17px;
+}
+
+/* =========================================
+ТЕХНОЛОГИЧЕСКАЯ КАРТА
+========================================= */
+
+.technology-map {
+padding: 100px 6%;
+background: #fff8fa;
+}
+
+.technology-map-heading {
+text-align: center;
+margin-bottom: 70px;
+}
+
+.technology-map-heading h2 {
+margin: 12px 0;
+font-size: 45px;
+color: #49363e;
+}
+
+.technology-map-heading > p:last-child {
+color: #806873;
+}
+
+/* КОНТЕЙНЕР КАРТЫ */
+
+.technology-map-container {
+position: relative;
+width: min(1000px, 100%);
+height: 700px;
+margin: 0 auto;
+}
+
+/* ЦЕНТР */
+
+.technology-map-center {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 190px;
+height: 190px;
+border-radius: 50%;
+background: white;
+border: 2px solid #e9c5d0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-shadow:
+0 20px 60px rgba(74, 56, 64, 0.12);
+z-index: 3;
+}
+
+.technology-map-center span {
+font-size: 35px;
+color: #c78399;
+}
+
+.technology-map-center strong {
+margin-top: 8px;
+color: #49363e;
+letter-spacing: 2px;
+}
+
+.technology-map-center small {
+margin-top: 6px;
+color: #806873;
+font-size: 10px;
+}
+
+/* ЛИНИИ */
+
+.technology-map-container::before {
+content: "";
+position: absolute;
+left: 50%;
+top: 50%;
+width: 700px;
+height: 700px;
+transform: translate(-50%, -50%);
+border: 1px dashed #e7c5cf;
+border-radius: 50%;
+}
+
+/* =========================================
+КНОПКИ
+========================================= */
+
+.tech-map-item {
+
+    position: absolute;
+
+    width: 180px;
+
+    min-height: 130px;
+
+    padding: 18px;
+
+    border: 1px solid #f0d6de;
+
+    border-radius: 18px;
+
+    background: white;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+    box-shadow: 0 8px 25px rgba(74, 56, 64, 0.06);
+
+}
+
+.tech-map-item:hover {
+    border-color: #c78399;
+    box-shadow: 0 12px 30px rgba(74, 56, 64, 0.13);
+}
+
+.tech-item-one:hover,
+.tech-item-four:hover {
+    transform: translateX(-45%) scale(1.03);
+}
+
+.tech-item-two:hover,
+.tech-item-three:hover,
+.tech-item-five:hover,
+.tech-item-six:hover {
+    transform: scale(1.03);
+}
+
+.tech-map-item span {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+.tech-map-item strong {
+
+    color: #49363e;
+
+    font-size: 16px;
+
+    text-align: center;
+
+}
+
+.tech-map-item small {
+
+    margin-top: 5px;
+
+    color: #c78399;
+
+    font-size: 11px;
+
+}
+
+/* ПОЗИЦИИ */
+
+.tech-item-one {
+
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tech-item-two {
+    top: 120px;
+    right: 50px;
+}
+
+.tech-item-three {
+    bottom: 85px;
+    right: 100px;
+}
+
+.tech-item-four {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tech-item-five {
+    bottom: 85px;
+    left: 100px;
+}
+.tech-item-six {
+    top: 120px;
+    left: 70px;
+}
+
+/* =========================================
+КАК РАБОТАЕТ ТЕХНОЛОГИЯ
+========================================= */
+
+.how-technology-works {
+padding: 110px 8%;
+background: white;
+}
+
+.how-title {
+max-width: 650px;
+margin-bottom: 65px;
+}
+
+.how-title h2 {
+margin-top: 12px;
+font-size: 45px;
+line-height: 1.15;
+color: #49363e;
+}
+
+.technology-process {
+max-width: 1100px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+.process-step {
+width: 260px;
+padding: 30px;
+background: #fff8fa;
+border-radius: 20px;
+}
+
+.process-number {
+color: #c78399;
+font-size: 13px;
+font-weight: bold;
+}
+
+.process-icon {
+margin: 20px 0 15px;
+font-size: 35px;
+}
+
+.process-step h3 {
+color: #49363e;
+margin-bottom: 10px;
+}
+
+.process-step p {
+color: #806873;
+line-height: 1.5;
+font-size: 14px;
+}
+
+.process-line {
+color: #c78399;
+font-size: 28px;
+}
+
+/* =========================================
+ТЕХНОЛОГИИ ВОКРУГ НАС
+========================================= */
+
+.technology-life {
+padding: 100px 8%;
+background: #fdecef;
+}
+
+.technology-life-heading {
+max-width: 1000px;
+margin: 0 auto 45px;
+}
+
+.technology-life-heading h2 {
+margin-top: 10px;
+font-size: 43px;
+color: #49363e;
+}
+
+.life-list {
+max-width: 1000px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+}
+
+.life-item {
+display: flex;
+align-items: center;
+gap: 20px;
+padding: 25px;
+background: white;
+border-radius: 18px;
+}
+
+.life-item > span {
+width: 55px;
+height: 55px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #fdecef;
+border-radius: 15px;
+font-size: 25px;
+}
+
+.life-item strong {
+color: #49363e;
+}
+
+.life-item p {
+margin-top: 5px;
+color: #806873;
+font-size: 14px;
+line-height: 1.4;
+}
+
+/* =========================================
+ФИНАЛЬНЫЙ БЛОК
+========================================= */
+
+.technology-final {
+position: relative;
+max-width: 850px;
+margin: 100px auto;
+padding: 80px 30px;
+text-align: center;
+overflow: hidden;
+}
+
+.final-glow {
+position: absolute;
+left: 50%;
+top: 0;
+transform: translateX(-50%);
+width: 180px;
+height: 180px;
+border-radius: 50%;
+background: #fdecef;
+filter: blur(25px);
+z-index: -1;
+}
+
+.technology-final h2 {
+margin: 15px 0;
+font-size: 52px;
+color: #49363e;
+}
+
+.technology-final > p:last-child {
+max-width: 600px;
+margin: 0 auto;
+color: #806873;
+line-height: 1.7;
+}
+
+/* =========================================
+МОДАЛЬНОЕ ОКНО
+========================================= */
+
+.technology-info-modal {
+position: fixed;
+inset: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 25px;
+background: rgba(74, 56, 64, 0.65);
+opacity: 0;
+visibility: hidden;
+transition: 0.3s;
+z-index: 2000;
+}
+
+.technology-info-modal.active {
+opacity: 1;
+visibility: visible;
+}
+
+.technology-info-content {
+position: relative;
+width: min(600px, 100%);
+padding: 50px;
+background: white;
+border-radius: 25px;
+box-shadow: 0 25px 70px rgba(74, 56, 64, 0.25);
+transform: translateY(30px);
+transition: 0.3s;
+}
+
+.technology-info-modal.active .technology-info-content {
+transform: translateY(0);
+}
+
+.technology-info-icon {
+width: 75px;
+height: 75px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #fdecef;
+border-radius: 20px;
+font-size: 38px;
+margin-bottom: 25px;
+}
+
+.technology-info-content h2 {
+margin: 10px 0 20px;
+font-size: 34px;
+color: #49363e;
+}
+
+.technology-info-description {
+color: #806873;
+line-height: 1.7;
+margin-bottom: 25px;
+}
+
+.technology-result {
+margin-top: 12px;
+padding: 15px 18px;
+background: #fff8fa;
+border-radius: 13px;
+}
+
+.result-label {
+margin-bottom: 5px;
+color: #c78399;
+font-size: 10px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+.technology-result strong {
+color: #49363e;
+font-size: 14px;
+}
+
+.technology-info-close {
+position: absolute;
+top: 15px;
+right: 15px;
+width: 42px;
+height: 42px;
+border: none;
+border-radius: 50%;
+background: #fff8fa;
+color: #5a414b;
+font-size: 28px;
+cursor: pointer;
+transition: 0.2s;
+}
+
+.technology-info-close:hover {
+background: #fdecef;
+transform: rotate(90deg);
+}
+
+/* =========================================
+ТЕЛЕФОН
+========================================= */
+
+@media (max-width: 800px) {
+.technology-hero {
+    min-height: auto;
+    padding: 60px 25px;
+    flex-direction: column;
+}
+
+.technology-hero-text {
+    width: 100%;
+    text-align: center;
+}
+
+.technology-hero-text > p:not(.small-title) {
+    margin: 0 auto;
+}
+
+.technology-visual {
+    width: 330px;
+    height: 330px;
+    margin-top: 20px;
+}
+
+.orbit-one {
+    width: 145px;
+    height: 145px;
+}
+
+.orbit-two {
+    width: 235px;
+    height: 235px;
+}
+
+.orbit-three {
+    width: 320px;
+    height: 320px;
+}
+
+.tech-core {
+    width: 100px;
+    height: 100px;
+}
+
+.tech-core span {
+    font-size: 25px;
+}
+
+.tech-core strong {
+    font-size: 11px;
+}
+
+.tech-point {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.point-one {
+    top: 15px;
+    left: 142px;
+}
+
+.point-two {
+    top: 80px;
+    right: 5px;
+}
+
+.point-three {
+    bottom: 30px;
+    right: 25px;
+}
+
+.point-four {
+    bottom: 25px;
+    left: 25px;
+}
+
+.point-five {
+    top: 80px;
+    left: 0;
+}
+
+.technology-introduction {
+    padding: 70px 25px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.technology-introduction h2 {
+    font-size: 35px;
+}
+
+
+.technology-map {
+    padding: 70px 20px;
+}
+
+.technology-map-heading h2 {
+    font-size: 35px;
+}
+
+.technology-map-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.technology-map-container::before {
+    display: none;
+}
+
+.technology-map-center {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.tech-map-item {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    transform: none !important;
+    width: 100%;
+    max-width: 350px;
+}
+.how-technology-works {
+    padding: 70px 25px;
+}
+.how-title h2 {
+    font-size: 35px;
+}
+
+.technology-process {
+    flex-direction: column;
+}
+.process-step {
+    width: 100%;
+}
+.process-line {
+    transform: rotate(90deg);
+}
+.technology-life {
+    padding: 70px 20px;
+}
+.technology-life-heading h2 {
+    font-size: 35px;
+}
+.life-list {
+    grid-template-columns: 1fr;
+}
+.technology-final {
+    margin: 60px auto;
+    padding: 60px 25px;
+}
+
+.technology-final h2 {
+    font-size: 40px;
+}
+.technology-info-content {
+    padding: 35px 25px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+.technology-info-content h2 {
+    font-size: 28px;
+}
+}
