@@ -300,14 +300,10 @@ footer {
 
     transition: 0.3s;
 }
-
 .card-button:hover {
     background-color: #b76e86;
 }
-
-
 /* СТРАНИЦА УЧЁНЫХ */
-
 .scientists-page {
     padding: 90px 8%;
     background-color: #fff8fa;
@@ -335,10 +331,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;
 }
-
-
 /* КАРТОЧКА УЧЁНОГО */
-
 .scientist-card {
     background-color: white;
 
@@ -1759,34 +1752,34 @@ transform: rotate(90deg);
 }
 
 .point-one {
-    top: 15px;
+    top: 10px;
     left: 142px;
 }
 
 .point-two {
-    top: 80px;
-    right: 5px;
+    top: 65px;
+    right: 10px;
 }
 
 .point-three {
-    bottom: 30px;
-    right: 25px;
+    bottom: 35px;
+    right: 35px;
 }
 
 .point-four {
-    bottom: 25px;
-    left: 25px;
+    bottom: 10px;
+    left: 142px;
 }
 
 .point-five {
-    top: 80px;
-    left: 0;
-}
-    .point-six {
-    top: 65px;
-    left: 0px;
+    bottom: 35px;
+    left: 35px;
 }
 
+.point-six {
+    top: 65px;
+    left: 10px;
+}
 .technology-introduction {
     padding: 70px 25px;
     grid-template-columns: 1fr;
