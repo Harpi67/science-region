@@ -1782,6 +1782,10 @@ transform: rotate(90deg);
     top: 80px;
     left: 0;
 }
+    .point-six {
+    top: 65px;
+    left: 15px;
+}
 
 .technology-introduction {
     padding: 70px 25px;
